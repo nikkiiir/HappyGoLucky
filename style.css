@@ -1,0 +1,517 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fredoka One', sans-serif;
+}
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.navbar {
+    width: 100%;
+    color: white;
+    background-color: white;
+    height: 70px;
+}
+
+.navbar .container {
+    max-width: 1200px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.logo img {
+    height: 200px;
+    width: 200px;
+    margin-top: 60px;
+    margin-left: -60px;
+}
+
+nav {
+    display: flex;
+}
+
+nav ul{
+    display: flex;
+    margin-right: 10px;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+   color: black;
+   text-decoration: none;
+   font-size: 20px;
+   font-weight: bold;
+   margin: 0px 20px;
+   padding-left: 30%;
+}
+
+/*--- Landing page intro ---*/
+
+.intro {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    background: url(images/1.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    display: table;
+    top: 0;
+}
+
+
+.content h1 {
+    font-family: 'Fredoka One', serif;
+    font-size: 600%;
+    font-weight: 700;
+    color: white;
+    padding-top: 600px;
+    display: table;
+    text-shadow: 0px 0px 250px #000;
+ 
+}
+
+/*--- About page intro ---*/
+.about-section {
+    background: url(images/2.jpg) no-repeat;
+    background-size: 50%;
+    background-color: #00B2FF;
+    overflow: hidden;
+    padding: 100px 0;
+}
+
+.inner-container {
+    width: 55%;
+    float: right;
+    background-color: white;
+    padding: 150px;
+}
+
+
+.inner-container h1 {
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.text {
+    margin-bottom: 40px;
+    font-size: 20px;
+    color: #545454;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.traits {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+
+
+/*--- Start Photo Gallery ---*/
+
+.gallery h2 {
+    text-align: center;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.box .one-third-img {
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+}
+
+.box .one-third-img img {
+    width: 100%;
+    padding-bottom: 10px;
+    border-radius: 100px;
+    margin-left: 2px;
+    margin-right: -5px;
+    border-color: #00B2FF;
+  
+    
+}
+
+
+.one-third-img img:hover {
+    transform: scaleX(-1);
+}
+
+
+/*--- Start Contact ---*/
+
+.contact h2 {
+    text-align: center;
+}
+
+.contact p {
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.contact a {
+    color: #2C2C2C;
+    text-decoration: none;
+}
+
+.break {
+    display: none;
+}
+
+
+.clearfix {
+    clear: both;
+    height: 10%;
+}
+
+
+/*--- End Contact ---*/
+
+/*--- Start Footer ---*/
+
+.second {
+    background-color: #00B2FF;
+}
+
+.second p {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 5%;
+}
+
+/*--- End Footer ---*/
+
+
+
+
+@media screen and (max-width: 1200px) {
+
+    .logo img {
+        height: 200px;
+        width: 200px;
+        margin-left: -10px;
+  
+    }
+
+    #menu-icon {
+        width: 30px;
+        height: 26px;
+        background: url(images/nav-icon.png) center;
+        display: inline-block;
+        margin: 50px 0 0 50px;
+     }
+    
+     #menu-icon {
+        margin: 26px 0 0 26px;
+    }
+
+    
+    nav ul, nav:active ul{
+        padding: 12px 0;
+        left: 23px;
+        top: 34px;
+        width: 50%;
+    }
+
+    nav {
+        float: right;
+        padding: 10% 5% 0 0;
+        height: 50px;
+        padding-left: 775px;
+    }
+    
+    nav ul {
+        list-style: none;
+        float: left;
+    }
+    
+    nav ul li {
+        font-family: 'Raleway', sans-serif;
+        font-size: 120%;
+    }
+    
+    nav ul li a {
+       color: white;
+       text-decoration: none;
+    }
+    
+    nav ul li a:hover {
+        text-decoration: underline;
+     }
+    
+     nav ul, nav:active ul {
+         display: none;
+         padding: 90px 590px;
+         left: 45px;
+         top: 60px;
+         width: 20%;
+         z-index: 1000;
+         text-shadow: 0px 0px 250px #000;
+     }
+    
+     nav li {
+         width: 100%;
+         padding: 8px 0 10px 7px;
+         margin: 0;
+     }
+    
+     nav:hover ul {
+         display: block;
+         position: absolute;
+     }
+
+ .content h1 {
+        display: none;
+    }
+
+    .inner-container {
+        padding: 80px;
+    }
+
+    
+    .box {
+        flex-direction: column;
+    }
+
+    .box .one-third-img {
+        width: 96%;
+
+    }
+
+    .break {
+        display: block;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+
+
+    .logo img {
+        height: 180px;
+        width: 180px;
+        margin-left: -10px;
+  
+    }
+
+    #menu-icon {
+        width: 30px;
+        height: 26px;
+        background: url(images/nav-icon.png) center;
+        display: inline-block;
+        margin: 50px 0 0 50px;
+     }
+    
+     #menu-icon {
+        margin: 26px 0 0 26px;
+    }
+
+    
+    nav ul, nav:active ul{
+        padding: 12px 0;
+        left: 23px;
+        top: 34px;
+        width: 50%;
+    }
+
+    nav {
+        float: right;
+        padding: 10% 5% 0 0;
+        height: 50px;
+        padding-left: 200px;
+    }
+    
+    nav ul {
+        list-style: none;
+        float: left;
+    }
+    
+    nav ul li {
+        font-family: 'Raleway', sans-serif;
+        font-size: 120%;
+    }
+    
+    nav ul li a {
+       color: white;
+       text-decoration: none;
+    }
+    
+    nav ul li a:hover {
+        text-decoration: underline;
+     }
+    
+     nav ul, nav:active ul {
+         display: none;
+         padding: 80px 370px;
+         left: 45px;
+         top: 60px;
+         width: 20%;
+         z-index: 1000;
+         text-shadow: 0px 0px 250px #000;
+     }
+    
+     nav li {
+         width: 100%;
+         padding: 8px 0 10px 7px;
+         margin: 0;
+     }
+    
+     nav:hover ul {
+         display: block;
+         position: absolute;
+     }
+
+ .content h1 {
+        display: none;
+    }
+
+    .about-section {
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+
+    .inner-container {
+        width: 100%;
+    }
+
+    
+    .box {
+        flex-direction: column;
+    }
+
+    .box .one-third-img {
+        width: 96%;
+
+    }
+
+    .break {
+        display: block;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .logo img {
+        height: 180px;
+        width: 180px;
+        margin-left: -10px;
+
+    }
+
+    #menu-icon {
+        width: 30px;
+        height: 26px;
+        background: url(images/nav-icon.png) center;
+        display: inline-block;
+        margin: 50px 0 0 50px;
+     }
+    
+     #menu-icon {
+        margin: 26px 0 0 26px;
+    }
+
+    
+    nav ul, nav:active ul{
+        padding: 12px 0;
+        left: 23px;
+        top: 34px;
+        width: 50%;
+    }
+
+    nav {
+        float: right;
+        padding: 10% 5% 0 0;
+        height: 50px;
+        padding-left: 200px;
+    }
+    
+    nav ul {
+        list-style: none;
+        float: left;
+    }
+    
+    nav ul li {
+        font-family: 'Raleway', sans-serif;
+        font-size: 120%;
+    }
+    
+    nav ul li a {
+       color: white;
+       text-decoration: none;
+    }
+    
+    nav ul li a:hover {
+        text-decoration: underline;
+     }
+    
+     nav ul, nav:active ul {
+         display: none;
+         padding: 80px 250px;
+         left: 45px;
+         top: 60px;
+         width: 20%;
+         z-index: 1000;
+         text-shadow: 0px 0px 250px #000;
+     }
+    
+     nav li {
+         width: 100%;
+         padding: 8px 0 10px 7px;
+         margin: 0;
+     }
+    
+     nav:hover ul {
+         display: block;
+         position: absolute;
+     }
+
+ .content h1 {
+        display: none;
+    }
+
+    .about-section {
+        padding: 0;
+    }
+
+    .inner-container {
+        padding: 60px;
+    }
+
+    
+    .box {
+        flex-direction: column;
+    }
+
+    .box .one-third-img {
+        width: 96%;
+
+    }
+
+    .break {
+        display: block;
+    }
+}
